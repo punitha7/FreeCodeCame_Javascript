@@ -1,0 +1,17 @@
+function palindrome(str) {
+  // Good luck!
+  var word = str.replace(/[\W_]/g, '').toLowerCase();
+  var rev = word.split('').reverse().join('');
+  if  (word === rev)
+  {
+  return true;
+  }
+  else
+    {
+      return false;
+    }
+}
+
+
+
+palindrome("eye");
